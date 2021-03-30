@@ -164,6 +164,22 @@ class Buttons extends React.Component {
                 onClick={() => this.handlerSendTransaction('YELLOW')}>
                 Yellow
               </Button>
+              {/* Task 2: Add new color. */}
+              {/* If case is just adding one more button with white color, 
+              this is piece of cake but in our case, we are expecting to be
+              functional as well while making transaction. So to achieve this,
+              we have to add a new color ie. white in list(COLORS) in 
+              /Magic-SCORE/magic/magic.py)*/}
+              <Button
+                color='white bulb-btn'
+                disabled={this.state.loading}
+                loading={
+                  this.state.loading && this.state.buttonLoading === 'WHITE'
+                }
+                className='m-4'
+                onClick={() => this.handlerSendTransaction('WHITE')}>
+                White
+              </Button>
             </div>
 
             <div className='row d-flex align-items-center justify-content-center bulb'>
