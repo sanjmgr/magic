@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import IconService from 'icon-sdk-js';
 
 import { MagicContext } from './helpers/magicProvider';
 
@@ -52,7 +51,6 @@ export default function Login() {
                 href={`https://bicon.tracker.solidwallet.io/address/${addressData.publicAddress}`}
                 rel='noopener noreferrer'
                 target='_blank'>
-                {/* {addressData.publicAddress} */}
                 <Hex hex={addressData.publicAddress} />
               </a>
             </Card.Meta>
@@ -62,7 +60,6 @@ export default function Login() {
               ICX
             </Card.Meta>
 
-            {/* <Butt onClick={logout}>Logout</button> */}
             <Button
               className='logButton center'
               onClick={logout}

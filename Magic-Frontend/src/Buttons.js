@@ -121,7 +121,7 @@ class Buttons extends React.Component {
   render() {
     return (
       <>
-        <div className='row d-flex justify-content-center mainContainer'>
+        <div className='row d-flex justify-content-center'>
           <div className='col-md-12'>
             <div className='row d-flex align-items-center justify-content-center buttonContainer'>
               <Button
